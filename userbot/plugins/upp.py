@@ -16,10 +16,10 @@ IS_SELECTED_DIFFERENT_BRANCH = (
     "in this case, Updater is unable to identify the branch to be updated."
     "please check out to an official branch, and re-start the updater."
 )
-OFFICIAL_UPSTREAM_REPO = "https://github.com/LEGENDXOP/LEGEND-BOT"
-BOT_IS_UP_TO_DATE = "âLegendBOT is up-to-date!â"
+OFFICIAL_UPSTREAM_REPO = "https://github.com/lucifeermorningstar/Devil2.0"
+BOT_IS_UP_TO_DATE = "âDevilBOT is up-to-date!â"
 NEW_BOT_UP_DATE_FOUND = (
-    "**LEGEND BOT  Update Found For** {branch_name}\n"
+    "**DEVIL BOT  Update Found For** {branch_name}\n"
     "\n\n{changelog}\n"
     "Pulling Updates !!"
 )
@@ -73,7 +73,7 @@ async def updater(message):
     )
 
     if not changelog:
-        await message.edit("**ï¹ï¹Updating LegendBOTt* \n**Version** : `2.0` \n**Telethon** : `1.15.0` \n**Status** : `Â«Pulling UpdatesÂ»` \nã**Thank You For Using LegendBOT !**ã")
+        await message.edit("**ï¹ï¹Updating DevilBOTt* \n**Version** : `2.0` \n**Telethon** : `1.19.5` \n**Status** : `Â«Pulling UpdatesÂ»` \nã**Thank You For Using DevilBOT !**ã")
         await asyncio.sleep(5)
  
     message_one = NEW_BOT_UP_DATE_FOUND.format(
@@ -141,7 +141,7 @@ def generate_change_log(git_repo, diff_marker):
 
 async def deploy_start(bot, message, refspec, remote):
     await message.edit(RESTARTING_APP)
-    await message.edit("**ââUpdating LegendBOTtââ** \n**Version** : `2.0` \n**Telethon** : `1.15.0` \n**Branch** : `âMasterâ` \n**Status** : `âUpdating & Restarting` \n__You Can Do__ `.alive` __To Check If I am Alive !__â")
+    await message.edit("**ââUpdating DevilBOTtââ** \n**Version** : `2.0` \n**Telethon** : `1.15.0` \n**Branch** : `âMasterâ` \n**Status** : `âUpdating & Restarting` \n__You Can Do__ `.alive` __To Check If I am Alive !__â")
     remote.push(refspec=refspec)
     await bot.disconnect()
     os.execl(sys.executable, sys.executable, *sys.argv)

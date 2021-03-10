@@ -12,7 +12,7 @@ from telethon import events, functions, version
 
 
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "@teamishere"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "𝙳𝙴𝚅𝙸𝙻"
 
 
 
@@ -62,7 +62,7 @@ async def cmd_list(event):
 
                         allow_cache=False,
 
-                        caption="COMMANDS In LEGEND BOT",
+                        caption="COMMANDS In 𝙳𝙴𝚅𝙸𝙻 𝚄𝚂𝙴𝚁𝙱𝙾𝚃",
 
                         reply_to=reply_to_id
 
@@ -150,7 +150,7 @@ async def _(event):
 
     logger.info(result)  # pylint:disable=E0602
 
-    await event.edit("Telethon UserBot powered LEGEND_BOT")
+    await event.edit("Telethon UserBot powered 𝙳𝙴𝚅𝙸𝙻_𝚋𝚘𝚝")
 
 
 
@@ -172,7 +172,7 @@ async def _(event):
 
         help_string = CMD_LIST[plugin_name].doc
 
-        unload_string = f"Use .unload {plugin_name} to remove this plugin.\n           Â© LEGEND BOT"
+        unload_string = f"Use .unload {plugin_name} to remove this plugin.\n           Â© 𝙳𝙴𝚅𝙸𝙻 𝙱𝙾𝚃"
 
         
 

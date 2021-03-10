@@ -1,7 +1,7 @@
 from telethon.sync import TelegramClient
 from telethon.sessions import StringSession
 print("")
-print("""Welcome To LEGEND BOT String Generator By @LEGENDX22""")
+print("""Welcome To Devil BOT String Generator By @lucifeermorningstar""")
 print("""Kindly Enter Your Details To Continue ! """)
 
 API_KEY = input("API_KEY: ")
@@ -17,7 +17,7 @@ while True:
    session = client.session.save()
    client.send_message(
        "me",
-       f"Here is your TELEGRAM STRING SESSION\n(Tap to copy it)👇 \n\n `{session}` \n\n And Visit @teamishere For Any Help !"
+       f"Here is your TELEGRAM STRING SESSION\n(Tap to copy it)👇 \n\n `{session}` \n\n And Visit @deviluserbot For Any Help !"
    )
 
    print(

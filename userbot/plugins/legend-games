@@ -26,7 +26,7 @@ async def _(event):
         await event.edit(input_str)
         animation_chars = [
        
-            "**Welcome To LEGENDlBot Repo Game**",
+            "**Welcome To DevilBot Repo Game**",
             "**Click The Gift As Fast As Possible**",
             "**Game Starts in 3**",
             "**Game Starts in 2**",
@@ -62,7 +62,7 @@ async def gamez(event):
     await event.delete()
 CMD_HELP.update(
     {
-        "legend-games": "**Plugin : **`legend-games`\
+        "devil-games": "**Plugin : **`devil-games`\
     \n\n**Syntax : **`.xogame and .game`\
     \n**Function : **games h play krke Dekho"
     }

@@ -23,8 +23,8 @@ import os
 import datetime
 #importing finished
 from userbot import botnickname 
-BOT = str(botnickname) if botnickname else "LEGEND BOT"
-NAME = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND BOY"
+BOT = str(botnickname) if botnickname else "devil BOT"
+NAME = str(ALIVE_NAME) if ALIVE_NAME else "devil BOY"
 tim = get_readable_time((time.time() - StartTime))
 #pic 👇
 PIC = os.environ.get("ALIVE_PIC")
@@ -33,18 +33,18 @@ uptime = tim
 #time = date + time okay
 TIME = time.asctime(time.localtime())
 #my name 👇
-LEGENDX = "[LEGEND X](https://t.me/legendx22)"
+𝗗𝗘𝗩𝗜𝗟 = "[𝗗𝗲𝘃𝗶𝗹](https://t.me/luciifeermorningstar)"
 #my bots repo 👇
-REPO = "[LEGEND BOT](https://github.com/legendx22/LEGEND-BOT)"
+REPO = "[𝗗𝗘𝗩𝗜𝗟 𝗕𝗢𝗧](https://github.com/luciifeermorningstar/Devil)"
 #grpup👇NAME = "[{MAATER}](tg://user?id={X})"
 #yrr isko apne bot me aply krne se pehle mere se pooch lena ok
 #aur aage add kruga abhi busy okay 🤔
 global ghanti
 X = bot.uid
 MASTER = f"[{NAME}](tg://user?id={X})"
-GROUP = "[SUPPORT GROUP](https://t.me/LEGEND_USERBOT_SUPPORT)"
+GROUP = "[SUPPORT GROUP](https://t.me/deviluserbot)"
 #itna test h aur aage krte h
 #test successful raha ab aage 
-ALIVE = "LEGEND BOT IS ON 🔥 FIRE 🔥" #make by LEGENDX22
-OP = " HELLO MASTER MY NAME IS LEGEND BOT I AM A BEST USERBOT 💝"
+ALIVE = "∂єνιℓ υѕєяησт ιѕ ση🔥 ƒιяє 🔥" #make by ∂єνιℓ
+OP = "𝙷𝙴𝙻𝙻𝙾 𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 𝙳𝙴𝚅𝙸𝙻 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 𝙸 𝙰𝙼 𝚃𝙷𝙴 𝙱𝙴𝚂𝚃 𝚄𝚂𝙴𝚁𝙱𝙾𝚃💝"
 EMOJI = "🔥"

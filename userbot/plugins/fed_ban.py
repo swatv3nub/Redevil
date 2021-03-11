@@ -214,7 +214,7 @@ async def _(event):
         await asyncio.sleep(5)
         await bot.send_message(chat, f"/unfban {FBAN}")
         await asyncio.sleep(5)
-    await event.edit(f"𝙳𝚎𝚟𝚒𝚕UnFBan Completed. Affected {len(fedList)} Feds by {PRO}.\n#LEGENDBOT")
+    await event.edit(f"𝙳𝚎𝚟𝚒𝚕UnFBan Completed. Affected {len(fedList)} Feds by {PRO}.\n#DEVILBOT")
 
 
 # By TEAMLEGEND

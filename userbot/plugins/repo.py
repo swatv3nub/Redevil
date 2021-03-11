@@ -28,4 +28,4 @@ async def inline_id_handler(event: events.InlineQuery.Event):
 async def callback_query_handler(event):
 
 # inline by LEGENDX22 and PROBOYX 🔥
-  await event.edit(text=f"{BOT} REPO AND GROUP LINK",buttons=[[Button.url(f"🔥{BOT} REPO🔥", url="https://github.com/LEGENDXOP/LEGEND-BOT"), Button.url(f"⚡{BOT} SUPPORT⚡", url="https://t.me/LEGEND_USERBOT_SUPPORT")]])
+  await event.edit(text=f"{BOT} REPO AND GROUP LINK",buttons=[[Button.url(f"🔥{BOT} REPO🔥", url="https://github.com/lucifeermorningstar/Devil"), Button.url(f"⚡{BOT} SUPPORT⚡", url="https://t.me/deviluserbot")]])

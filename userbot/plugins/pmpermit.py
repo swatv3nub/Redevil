@@ -46,7 +46,7 @@ from userbot.uniborgConfig import Config
 
 from var import Var
 
-LIGHTNINGUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND BOY"
+LIGHTNINGUSER = str(ALIVE_NAME) if ALIVE_NAME else "Devil"
 
 from userbot.utils import admin_cmd as lightning_cmd
 

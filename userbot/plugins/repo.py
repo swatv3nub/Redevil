@@ -19,10 +19,10 @@ from telethon.tl.custom import Button
 from telethon import events, errors, custom, functions
 @tgbot.on(events.InlineQuery(pattern=r"repo"))
 async def inline_id_handler(event: events.InlineQuery.Event):
- LEGEND = event.builder
+ DEVIL = event.builder
  X= [[custom.Button.inline("🔥 CLICK ME 🔥",data="obhai")]]
  query = event.text
- result = LEGEND.article("LEGEND",text="REPO AND SUPPORT",buttons=X,link_preview=False)
+ result = DEVIL.article("DEVIL",text="REPO AND SUPPORT",buttons=X,link_preview=False)
  await event.answer([result])
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"obhai")))
 async def callback_query_handler(event):

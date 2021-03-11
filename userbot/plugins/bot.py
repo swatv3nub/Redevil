@@ -22,10 +22,10 @@ from userbot.utils import admin_cmd
 from PIL import Image
 import requests
 from io import BytesIO
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND BOY"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "𝙳𝙴𝚅𝙸𝙻"
 ALIVE_PHOTTO = os.environ.get("ALIVE_PHOTTO", None)
 
-pro_text=(f"**{BOT} IS ON FIRE **\n\n**Yes Master, Am Alive And Systems Are Working Perfectly As It Should Be...**\n\n🔥 About My System 🔥\n\n➾ **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀꜱɪᴏɴ** ☞ 1.17.5\n➾ **ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ** ☞ [ᴊᴏɪɴ](https://t.me/hackerget0)\n➾ **ʟɪᴄᴇɴꜱᴇ**  ☞ [LEGEND BOT](https://github.com/legendx22)\n➾ **ᴄᴏᴘʏʀɪɢʜᴛ ʙʏ** ☞ [LEGEND-BOT](https://github.com/legendx22/LEGEND-BOT)\n\n➾ **ᴍʏ ᴍᴀsᴛᴇʀ** ☞ [{DEFAULTUSER}](tg://user?id={ok})\n")
+pro_text=(f"**{BOT} IS ON FIRE **\n\n**Yes Master, Am Alive And Systems Are Working Perfectly As It Should Be...**\n\n🔥 About My System 🔥\n\n➾ **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀꜱɪᴏɴ** ☞ 1.17.5\n➾ **ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ** ☞ [ᴊᴏɪɴ](https://t.me/deviluserbot)\n➾ **ʟɪᴄᴇɴꜱᴇ**  ☞ [DEVIL BOT](https://github.com/lucifeermorningstar/Devil/License)\n➾ **ᴄᴏᴘʏʀɪɢʜᴛ ʙʏ** ☞ [DEVIL BOT](https://github.com/lucifeermorningstar/Devil)\n\n➾ **ᴍʏ ᴍᴀsᴛᴇʀ** ☞ [{DEFAULTUSER}](tg://user?id={ok})\n")
 TG_BOT_USER_NAME_BF_HER = os.environ.get("ALIVE_PHOTTO", None)
 if TG_BOT_USER_NAME_BF_HER is not None:
     @tgbot.on(events.InlineQuery)
@@ -37,10 +37,10 @@ if TG_BOT_USER_NAME_BF_HER is not None:
         if query.startswith("alive") and event.query.user_id == me.id:
             buttons = [
                 [
-                    Button.url("Repo", "https://github.com/LEGENDXOP/LEGEND-BOT"),
-                    Button.url("Deploy", "https://heroku.com/deploy?template=https://github.com/legendx22/LEGEND-BOT/blob/master")],
-                    [Button.url("String", "https://repl.it/legendx22/LEGEND-BOT#main.py"),
-                    Button.url("Channel", "https://t.me/teamishere"),
+                    Button.url("Repo", "https://github.com/lucifeermorningstar/Devil"),
+                    Button.url("Deploy", "https://heroku.com/deploy?template=https://github.com/lucifeermorningstar/Devil/blob/master")],
+                    [Button.url("String", "https://repl.it/@lucifeermorning/DevilBot#main.py"),
+                    Button.url("Channel", "https://t.me/deviluserbot"),
                 ]
             ]
             if ALIVE_PHOTTO and ALIVE_PHOTTO.endswith((".jpg", ".png", "gif", "mp4")):
@@ -53,14 +53,14 @@ if TG_BOT_USER_NAME_BF_HER is not None:
             elif ALIVE_PHOTTO:
                 result = builder.document(
                     ALIVE_PHOTTO,
-                    title="LEGEND BOT",
+                    title="DEVIL BOT",
                     text=pro_text,
                     buttons=buttons,
                     link_preview=False,
                 )
             else:
                 result = builder.article(
-                    title="LEGEND BOT",
+                    title="DEVIL BOT",
                     text=pro_text,
                     buttons=buttons,
                     link_preview=False,
@@ -70,7 +70,7 @@ if TG_BOT_USER_NAME_BF_HER is not None:
 
 @borg.on(admin_cmd(pattern=r"alive"))
 async def hehe(event):
-    alive = requests.get("https://telegra.ph/file/b4290942faf5be36dffc0.png")
+    alive = requests.get("https://telegra.ph/file/8c98504c33973b8071bd3.jpg")
     alive.raise_for_status()
     LEGENDX = BytesIO(alive.content)
     LEGENDX.seek(0)

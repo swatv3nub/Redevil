@@ -4,7 +4,7 @@ from userbot.legend import BOT
 from .. import ALIVE_NAME, CMD_HELP
 from ..utils import admin_cmd, edit_or_reply, sudo_cmd
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND BOY"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "𝙳𝙴𝚅𝙸𝙻"
 
 
 @borg.on(admin_cmd(pattern=f"hbping$", outgoing=True))
@@ -64,7 +64,7 @@ async def _(event):
     end = datetime.now()
     ms = (end - start).microseconds / 1000
     await event.edit(
-        f"__**꧁ Pong! ꧂__**\n\n   ⚘ {ms}\n   ⚘ __**My**__ __**Master**__ [{DEFAULTUSER}]\n\n\n MY NAME IS [{BOT}] THANKS MASTER TO DEPLOY ME 💝💝 "
+        f"__**꧁ Pong! ꧂__**\n\n   ⚘ {ms}\n   ⚘ __**My**__ __**Master**__ [{DEFAULTUSER}]\n\n\n "
     )
 
 

@@ -136,7 +136,7 @@ async def _(event):
         await bot.send_message(chat, f"/fban {FBAN} {REASON}")
         await asyncio.sleep(3)
     await event.edit(
-        f"SuperFBan Completed. Affected {len(fedList) - exCount} feds.\n#LEGEND BOT"
+        f"SuperFBan Completed. Affected {len(fedList) - exCount} feds.\n#DEVIL BOT"
     )
 
 

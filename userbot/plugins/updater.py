@@ -1,6 +1,6 @@
 # make by LEGENDX22 🔥🔥
 # MAKE BY LEGEND X
-#make for LEGEND BOT
+#make for DEVIL BOT
 # KANG KRNA H TO CREDITS DEDENA 
 
 from datetime import datetime

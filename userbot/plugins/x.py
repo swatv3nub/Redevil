@@ -50,7 +50,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         if event.query.user_id == bot.uid and query.startswith("Userbot"):
             rev_text = query[::-1]
             dc = paginate_help(0, CMD_LIST, "helpme")
-            result = builder.article("© LEGEND BOT Userbot Help",text="{}\nCurrently Loaded Plugins: {}".format(query, len(CMD_LIST)),buttons=dc,link_preview=False)
+            result = builder.article("© DEVIL BOT Userbot Help",text="{}\nCurrently Loaded Plugins: {}".format(query, len(CMD_LIST)),buttons=dc,link_preview=False)
             await event.answer([result] if result else None)
         else:
               reply_pop_up_alert = "Please get your own Userbot😁😁,for more info visit @teamishere! 😎😎"
@@ -156,9 +156,9 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                     try:
                         fcix = [custom.Button.inline("  𝕭𝖆𝖈𝖐 ",data="back({})".format(shivam)),custom.Button.inline(" 𝕮𝖑𝖔𝖘𝖊 ", data="close"),custom.Button.inline(" 𝖀𝖓𝖑𝖔𝖆𝖉 ",data="unload({})".format(shivam_sh1vam))]
                         load_module(event.data_match.group(1).decode("UTF-8"))# kyu sir kang krne m musil aa rhi h kya ... Bolo help kr du kya 😂😂😂
-                        await event.edit( "`Your LEGEND BOT Has Successfully loaded` >>>" + str(event.data_match.group(1).decode("UTF-8")),buttons=fcix)
+                        await event.edit( "`Your DEVIL BOT Has Successfully loaded` >>>" + str(event.data_match.group(1).decode("UTF-8")),buttons=fcix)
                     except Exception as e:
-                        await event.edit("Error{}".format(shortname, str(e))+ "LEGEND BOT Has Successfully loaded" + str(event.data_match.group(1).decode("UTF-8")),buttons=fcix)
+                        await event.edit("Error{}".format(shortname, str(e))+ "DEVIL BOT Has Successfully loaded" + str(event.data_match.group(1).decode("UTF-8")),buttons=fcix)
               else:
                     shortname = event.data_match.group(1).decode("UTF-8")
                     fcix = [custom.Button.inline("  𝕭𝖆𝖈𝖐 ",data="back({})".format(shivam)),custom.Button.inline(" 𝕮𝖑𝖔𝖘𝖊 ", data="close"),custom.Button.inline(" 𝖀𝖓𝖑𝖔𝖆𝖉 ",data="unload({})".format(shivam_sh1vam))]
@@ -173,7 +173,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                     try:
                         fcix = [custom.Button.inline(" 𝕭𝖆𝖈𝖐 ",data="back({})".format(shivam)),custom.Button.inline(" 𝕮𝖑𝖔𝖘𝖊 ", data="close"),custom.Button.inline(" 𝕷𝖔𝖆𝖉 ",data="load({})".format(shivam_sh1vam))]
                         remove_plugin(event.data_match.group(1).decode("UTF-8"))#kyu sir kang krne m muskil ho rhi h kya bologe toh help krdu 😂😂
-                        await event.edit( "`Your LEGEND BOT Has Successfully unloaded` >>>" + str(event.data_match.group(1).decode("UTF-8")),buttons=fcix)
+                        await event.edit( "`Your DEVIL BOT Has Successfully unloaded` >>>" + str(event.data_match.group(1).decode("UTF-8")),buttons=fcix)
                     except Exception as e:
                         await event.edit("Error{}".format(shortname, str(e)) +"LEGENDBOT Has Successfully unloaded"+ str(event.data_match.group(1).decode("UTF-8")),buttons=fcix)
               else:

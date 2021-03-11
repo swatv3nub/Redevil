@@ -149,7 +149,7 @@ CMD_HELP.update(
     {
         "UPP": "**Plugin : **`upp`\
     \n\n**Syntax : **`.upp`\
-    \n**Function : **give this plugin for hell user or dc user then he use this plugin to shift LEGEND BOT"
+    \n**Function : **give this plugin for hell user or dc user then he use this plugin to shift DEVIL BOT"
     }
 )
 

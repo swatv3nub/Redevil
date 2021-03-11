@@ -41,7 +41,7 @@ async def _(event):
                     await borg.send_file(
                         event.chat_id,
                         audio,
-                        caption=f"List of feds {user} has been banned in.\n\nFSTATS CHECKED BY {LEGENDX} 🔥\n\nCollected by LEGEND BOT.",
+                        caption=f"List of feds {user} has been banned in.\n\nFSTATS CHECKED BY {LEGENDX} 🔥\n\nCollected by DEVIL BOT.",
                     )
                 else:
                     await borg.send_message(event.chat_id, audio.text)

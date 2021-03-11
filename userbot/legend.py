@@ -23,8 +23,8 @@ import os
 import datetime
 #importing finished
 from userbot import botnickname 
-BOT = str(botnickname) if botnickname else "devil BOT"
-NAME = str(ALIVE_NAME) if ALIVE_NAME else "devil BOY"
+BOT = str(botnickname) if botnickname else "𝙳𝙴𝚅𝙸𝙻 𝚄𝚂𝙴𝚁𝙱𝙾𝚃"
+NAME = str(ALIVE_NAME) if ALIVE_NAME else "𝙳𝙴𝚅𝙸𝙻"
 tim = get_readable_time((time.time() - StartTime))
 #pic 👇
 PIC = os.environ.get("ALIVE_PIC")

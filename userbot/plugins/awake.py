@@ -38,7 +38,7 @@ global ghanti
 #make by LEGEND X bht mehnat lag gayi yrr but banhi gaya 😅           
 #@command(outgoing=True, pattern="^.awake$")
 @borg.on(admin_cmd(pattern=r"awake")) 
-@bot.on(sudo_cmd(pattern="awake ?(.*)", allow_sudo=True))
+@borg.on(sudo_cmd(pattern="awake ?(.*)", allow_sudo=True))
 async def amireallyalive(awake):
    """ For .awake command, check if the bot is running.  """
    tag = borg.uid

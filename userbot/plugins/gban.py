@@ -53,6 +53,7 @@ async def get_user_sender_id(user, event):
     return user_obj
 
 @borg.on(admin_cmd(pattern="gban ?(.*)"))
+@borg.on(sudo_cmd("gban ?(.*)", allow_sudo=True))
 async def gspider(userbot):
     lol = userbot
     sender = await lol.get_sender()

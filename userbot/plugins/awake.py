@@ -16,7 +16,7 @@ from telethon.tl.types import ChannelParticipantsAdmins
 from userbot import ALIVE_NAME, devilversion, StartTime, CMD_HELP
 from . import legend
 from userbot.legend import BOT
-from userbot.utils import admin_cmd
+from userbot.utils import admin_cmd, sudo_cmd
 from telethon import version
 from math import ceil
 import json
@@ -37,7 +37,8 @@ global ghanti
         
 #make by LEGEND X bht mehnat lag gayi yrr but banhi gaya 😅           
 #@command(outgoing=True, pattern="^.awake$")
-@borg.on(admin_cmd(pattern=r"awake"))
+@borg.on(admin_cmd(pattern=r"awake")) 
+@bot.on(sudo_cmd(pattern="awake ?(.*)", allow_sudo=True))
 async def amireallyalive(awake):
    """ For .awake command, check if the bot is running.  """
    tag = borg.uid

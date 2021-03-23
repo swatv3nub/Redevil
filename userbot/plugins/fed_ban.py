@@ -9,6 +9,7 @@ from userbot.utils import admin_cmd
 from userbot import bot
 PRO = NAME
 @bot.on(admin_cmd("devilfban ?(.*)"))
+@bot.on(sudo_cmd("devilfban ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return

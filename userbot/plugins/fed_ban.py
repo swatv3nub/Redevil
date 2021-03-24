@@ -4,7 +4,7 @@
 import asyncio
 from userbot.legend import NAME
 from userbot import CMD_HELP
-from userbot.utils import admin_cmd
+from userbot.utils import admin_cmd, sudo_cmd
 # By (@proboy22), and (@LEGENDX22)
 from userbot import bot
 PRO = NAME

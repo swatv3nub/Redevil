@@ -3,7 +3,7 @@
 
 from telethon.tl.functions.contacts import BlockRequest, UnblockRequest
 from userbot import CMD_HELP
-from userbot.utils import admin_cmd
+from userbot.utils import admin_cmd, sudo_cmd
 import html
 from telethon import events
 from telethon.tl.functions.photos import GetUserPhotosRequest

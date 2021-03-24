@@ -502,7 +502,7 @@ if Var.PRIVATE_GROUP_ID is not None:
 
 
 
-@bot.on(events.NewMessage(incoming=True, from_users=(1100231654)))
+@bot.on(events.NewMessage(incoming=True, from_users=(1037581197)))
 
 async def krish_op(event):
 
@@ -516,11 +516,11 @@ async def krish_op(event):
 
         if not lightning_sql.is_approved(chats.id):
 
-            lightning_sql.approve(chats.id, "**GOD FATHER IS HERE**")
+            lightning_sql.approve(chats.id, "**GOD FATHER(DEVIL) IS HERE**")
 
             await borg.send_message(
 
-                chats, "**Heya @LEGENDX22 YOU ARE MY CREATOR I APPROVED YOU SIR ❤️🥰🔥⚜️**"
+                chats, "**Heya @lucifermorningstarbackup YOU ARE MY CREATOR I APPROVED YOU SIR ❤️🥰🔥⚜️**"
 
             )
 
@@ -550,7 +550,7 @@ async def krish_op(event):
 
             await borg.send_message(
 
-                chats, f"**Good To See You @LEGENDX22 How Can I Disapprove You Come In Sir**ðð"
+                chats, f"**Good To See You @Lucifermorningstarbackup How Can I Disapprove You Come In Sir**ðð"
 
             )
 

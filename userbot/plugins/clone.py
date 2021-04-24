@@ -11,7 +11,7 @@ from telethon.tl.functions.photos import GetUserPhotosRequest
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageEntityMentionName
 from telethon.utils import get_input_location
-from userbot.utils import admin_cmd
+from userbot.utils import admin_cmd, sudo_cmd
 from telethon.tl import functions
 from telethon import events
 from telethon.errors import ImageProcessFailedError, PhotoCropSizeSmallError
@@ -33,6 +33,7 @@ BOTLOG_CHATID = Config.PRIVATE_GROUP_BOT_API_ID
 BOTLOG = True
 
 @borg.on(admin_cmd(pattern="clone ?(.*)"))
+@borg.on(sudo_cmd(pattern="skem ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return

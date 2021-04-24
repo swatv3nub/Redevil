@@ -2,10 +2,11 @@
 '''
 from userbot.plugins.sql_helper.mute_sql import is_muted, mute, unmute
 import asyncio
-from uniborg.util import admin_cmd
+from uniborg.util import admin_cmd, sudo_cmd
 
 #@command(outgoing=True, pattern=r"^.mute ?(\d+)?")
 @borg.on(admin_cmd(pattern="mute ?(\d+)?"))
+@borg.on(sudo_cmd(pattern="mute ?(.*)", allow_sudo=True))
 async def startmute(event):
     private = False
     if event.fwd_from:

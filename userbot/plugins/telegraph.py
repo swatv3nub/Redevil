@@ -4,7 +4,7 @@ import os
 from PIL import Image
 from datetime import datetime
 from telegraph import Telegraph, upload_file, exceptions
-from userbot.utils import admin_cmd
+from userbot.utils import admin_cmd, sudo_cmd
 from userbot import CMD_HELP
 
 telegraph = Telegraph()
@@ -13,6 +13,7 @@ auth_url = r["auth_url"]
 
 
 @borg.on(admin_cmd("t(m|t) ?(.*)"))
+@borg.on(sudo_cmd(pattern="tm ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return

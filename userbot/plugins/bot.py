@@ -18,7 +18,7 @@ from telethon.tl.custom import Button
 from telethon.tl.types import ChannelParticipantsAdmins
 global ok
 ok = borg.uid
-from userbot.utils import admin_cmd
+from userbot.utils import admin_cmd, sudo_cmd
 from PIL import Image
 import requests
 from io import BytesIO
@@ -69,6 +69,7 @@ if TG_BOT_USER_NAME_BF_HER is not None:
 
 
 @borg.on(admin_cmd(pattern=r"alive"))
+@borg.on(sudo_cmd(pattern="alive ?(.*)", allow_sudo=True))
 async def hehe(event):
     alive = requests.get("https://telegra.ph/file/8c98504c33973b8071bd3.jpg")
     alive.raise_for_status()
@@ -85,6 +86,7 @@ from userbot import bot
 
 
 @bot.on(admin_cmd(outgoing=True, pattern="alive"))
+@borg.on(sudo_cmd(pattern="alive ?(.*)", allow_sudo=True))
 async def repo(event):
     if event.fwd_from:
         return

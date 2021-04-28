@@ -175,7 +175,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                         remove_plugin(event.data_match.group(1).decode("UTF-8"))#kyu sir kang krne m muskil ho rhi h kya bologe toh help krdu 😂😂
                         await event.edit( "`Your DEVIL BOT Has Successfully unloaded` >>>" + str(event.data_match.group(1).decode("UTF-8")),buttons=fcix)
                     except Exception as e:
-                        await event.edit("Error{}".format(shortname, str(e)) +"LEGENDBOT Has Successfully unloaded"+ str(event.data_match.group(1).decode("UTF-8")),buttons=fcix)
+                        await event.edit("Error{}".format(shortname, str(e)) +"DEVILBOT Has Successfully unloaded"+ str(event.data_match.group(1).decode("UTF-8")),buttons=fcix)
               else:
                     shortname = event.data_match.group(1).decode("UTF-8")
                     fcix = [custom.Button.inline("  𝕭𝖆𝖈𝖐 ",data="back({})".format(shivam)),custom.Button.inline(" 𝕮𝖑𝖔𝖘𝖊 ", data="close"),custom.Button.inline(" 𝕷𝖔𝖆𝖉 ",data="load({})".format(shivam_sh1vam))]
@@ -189,10 +189,10 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                 try:
                     current_page_number = int(event.data_match.group(1).decode("UTF-8"))
                     buttons = paginate_help(current_page_number-2, CMD_HELP, "helpme")
-                    await event.edit("`>>> Here Is The Main Menu of\n\n©LEGENDBOT`", buttons=buttons)
+                    await event.edit("`>>> Here Is The Main Menu of\n\n©DEVILBOT`", buttons=buttons)
                 except:
                     buttons = paginate_help(0, CMD_HELP, "helpme")
-                    await event.edit("`>>> Here Is The Main Menu Of\n\n©LEGENDBOT`", buttons=buttons)
+                    await event.edit("`>>> Here Is The Main Menu Of\n\n©DEVILBOT`", buttons=buttons)
             else:
                 reply_pop_up_alert = "Please get your own Userbot,for more info visit @deviluserbot!"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)

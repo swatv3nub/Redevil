@@ -16,13 +16,13 @@ import shutil
 import subprocess
 import time
 from pySmartDL import SmartDL
-from DaisyX.uniborgConfig import Config
+from userbot.uniborgConfig import Config
 from telethon import events
-from DaisyX.utils import admin_cmd, humanbytes, progress, time_formatter
+from userbot.utils import admin_cmd, humanbytes, progress, time_formatter
 import subprocess
 import patoolib
 import tarfile
-from DaisyX import CMD_HELP
+from userbot import CMD_HELP
 
 thumb_image_path = Config.TMP_DOWNLOAD_DIRECTORY + "/thumb_image.jpg"
 extracted = Config.TMP_DOWNLOAD_DIRECTORY + "extracted/"
@@ -58,7 +58,7 @@ async def _(event):
     await borg.send_file(
         event.chat_id,
         directory_name + ".zip",
-        caption="∆ ᴢɪᴘᴘᴇᴅ ʙʏ ᴅᴀɪsʏ x ∆",
+        caption="Zipped By LEGENDBOT",
         force_document=True,
         allow_cache=False,
         reply_to=event.message.id,
@@ -102,7 +102,7 @@ async def _(event):
             await borg.send_file(
                 event.chat_id,
                 directory_name + ".rar",
-                caption="∆ ʀᴀʀ ʙʏ ᴅᴀɪsʏ x ∆",
+                caption="rarred By LEGENDBOT",
                 force_document=True,
                 allow_cache=False,
                 reply_to=event.message.id,
@@ -152,7 +152,7 @@ async def _(event):
             await borg.send_file(
                 event.chat_id,
                 directory_name + ".7z",
-                caption="7z archived By 𝘋𝘈𝘐𝘚𝘠 𝘟",
+                caption="7z archived By LEGENDBOT",
                 force_document=True,
                 allow_cache=False,
                 reply_to=event.message.id,
@@ -206,7 +206,7 @@ async def _(event):
             await borg.send_file(
                 event.chat_id,
                 output,
-                caption="TAR By Ðαιѕу χ",
+                caption="TAR By LEGENDBOT",
                 force_document=True,
                 allow_cache=False,
                 reply_to=event.message.id,
